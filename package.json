@@ -1,0 +1,20 @@
+{
+  "name": "pa-scrape-lv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "superagent": "^6.1.0",
+    "superagent-throttle": "^1.0.1",
+    "express": "~4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "PAL BCN <palbcn@yahoo.com> (palbcn.com)",
+  "license": "MIT"
+}
