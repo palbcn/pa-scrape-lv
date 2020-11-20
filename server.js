@@ -22,6 +22,7 @@ function todayArticlesFilename() {
   let today = new Date();
   return path.join('.data', 'articles.' + today.getFullYear() + (today.getMonth() + 1) + today.getDate() + '.json');
 }
+
 async function obtainArticles() {
   try {
     articles = await scrapeArticles();
