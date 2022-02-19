@@ -1,7 +1,0 @@
-.env
-.data
-*.log
-node_modules
-scratch
-
-
