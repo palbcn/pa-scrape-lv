@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web scraping example made with Glitch"
+    />
+    <title>Web scraping example, LV articles subset</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h3><em>Web scrape example by PA.</em></h3>
+      <div class="row">            
+      <div><img src="https://cdn.glitch.com/8b5af60c-8fd7-4185-b26b-35e41952088b%2Fpa-scrape-lv-192.png?v=1618141418546"/></div>
+      <h1><a href="/">Artículos seleccionados de LV</a></h1>
+      </div>
+      <h3>
+        <span id="headerdate">frescos del 99-99-1999</span> <button id="reload">
+        recarga</button>
+        </button>
+      </h3>
+      <h3>
+        <a href="/history.html">Artículos de días anteriores</a>
+      </h3>
+
+    </header>
+    <main>
+      <section id="articles">
+        <em>loading articles&hellip;</em>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Service started <span id="info-started">99-99-1999</span><br />
+        Articles loaded <span id="info-loaded">99-99-1999</span><br />
+        Page rendered <span id="info-now">99-99-1999</span>
+      </p>
+      <div class="row">
+        <div><img src="https://cdn.glitch.com/8b5af60c-8fd7-4185-b26b-35e41952088b%2Fpa-scrape-lv-192.png?v=1618141418546"/></div>
+        <p>&copy; PA y LV 2020. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

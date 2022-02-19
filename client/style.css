@@ -1,0 +1,93 @@
+:root {
+  --calendar-day-cells-color: rgb(0, 28, 76);
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 6px;
+}
+main h1 {
+  border-top: 1px solid grey;
+  font-size: 2rem;
+}
+main p {
+  font-size: 20px;
+}
+header {
+  background-color: rgb(0, 28, 76);
+  background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(57,76,139,1) 77%, rgba(0,162,255,1) 100%);
+  color: #fff;
+  padding: 0 0 1rem 1rem;
+}
+header a {
+  color: #ccf;
+}
+footer {
+  background-color: #999;
+  background: linear-gradient(45deg, rgba(69,69,69,1) 0%, rgba(135,135,135,1) 77%, rgba(193,193,193,1) 100%);  
+  font-size: 0.8rem;
+  color: white;
+  padding: 1em;
+}
+.row {
+  display:flex;
+}
+
+header img {
+  width:80px; 
+  margin:32px 16px 0 0;
+}
+
+footer img {
+  width:60px; 
+  margin:12px 32px 12px 0;
+}
+
+.authors ul, .author li {
+  margin:0;
+}
+.authors h3 {
+  margin-bottom:0;
+}
+.collapse {
+  cursor: pointer;
+}
+
+/* Calendar */
+.calendar-container {
+  max-width: 320px;
+}
+.calendar-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  background: var(--calendar-background, white); 
+}
+.calendar-cell {
+  padding: 6px 8px;
+  text-align: right;
+}
+.calendar-cell.blank, .calendar-cell.blank:hover  {
+  background: var(--calendar-background, white); 
+}
+.calendar-cell.day {
+  color: var(--calendar-day-cells-color, black);
+}
+.calendar-cell.day:hover {
+  background: var(--calendar-day-cells-hover-background, lightgrey); 
+  cursor:pointer;
+}
+.calendar-cell.day.void {
+  color: var(--calendar-empty-day-cells-color, lightgrey);
+}
+.calendar-cell.day.void:hover {
+  background:var(--calendar-background, white); 
+  cursor:default;
+}
+

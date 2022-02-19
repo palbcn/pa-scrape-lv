@@ -1,20 +1,28 @@
 {
   "name": "pa-scrape-lv",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Simple scraping example",
   "main": "server.js",
-  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "cheerio": "^0.22.0",
     "superagent": "^6.1.0",
     "superagent-throttle": "^1.0.1",
-    "express": "~4.17.1"
+    "replace-diacritics": "^1.0.1"
   },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node ."
+  "engines": {
+    "node": "12.x"
   },
-  "keywords": [],
-  "author": "PAL BCN <palbcn@yahoo.com> (palbcn.com)",
-  "license": "MIT"
+  "repository": {
+    "url": "https://glitch.com/edit/#!/pa-scrape-lv"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
